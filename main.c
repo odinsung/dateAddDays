@@ -15,10 +15,10 @@ typedef struct{
 }Date_t;
 
 bool isLeapYear(uint year){
-    if ((year % 4) 	 != 0){ return false; }
+    if ((year % 4)   != 0){ return false; }
     if ((year % 100) != 0){ return true;  }
     if ((year % 400) != 0){ return false; }
-    return true;	
+    return true;
 }
 
 Date_t dateAddDays(Date_t src, uint days){
